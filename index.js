@@ -1,1 +1,1 @@
-alert("hello");
+alert("欢迎您来阅读");
