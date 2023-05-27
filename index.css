@@ -1,12 +1,235 @@
+/*logo*/
+.logo {
+    background-color: #fff;
+}
 
 /*文字*/
 .all {
-    background-color: antiquewhite;
+    background-color: #fff;
+    margin:0px 3px 0px 3px;
     line-height:2em;
 }
 
-/*logo*/
-.logo {
-    background-color: antiquewhite;
+
+
+/*标红文字*/
+.red {
+     color:red;
+}
+
+/*标红文字*/
+.red1 {
+    color: red;
+}
+/*引语第二则*/
+.quote1 {
+    margin:10px 0px 10px 0px;
+   color:royalblue;
+}
+/*猫科图*/
+
+/*时间轴*/
+.timeline {
+    margin:5px 0 5px 0;
+    padding:0;
+    /*弹性布局 让文字居中*/
+    display:flex;
+    justify-content:center;
+    /*background-color:antiquewhite;*/
+}
+/*时间轴的部件*/
+.wrap {
+    width:1000px;
+    /*相对定位*/
+    position:relative;
+    top:100px;
+}
+.wrap::after{
+    content:"";
+    /*绝对定位*/
+    position:absolute;
+    top:-100px;
+    left:50%;
+    width:5px;
+    z-index:-9999;
+    height:10000px;
+    background-color:rgba(156,214,124,0.5);
+}
+
+  /*时间轴box的部分*/
+  .box{
+      position:relative;
+      width:100%;
+      height:120px;
+      margin-bottom:50px;
+      display:flex;
+      /*均匀排列每个元素 首个元素放置于起点 末反*/
+      justify-content:space-between;
+  }
+  /*板块的左右定位*/
+  .left,.right{
+      position:relative;
+      width:40%;
+      height:120px;
+      border-radius:15px;
+      color:rgb(90,90,90);
+      text-align:center;
+  }
+  /*页面范围内匹配偶数元素*/
+  .box:nth-child(even).left{
+      background-color:rgba(255,255,255,0.5);
+      box-shadow:0,0,10px,rgba(0,0,0,0.3);
+  }
+/*页面范围内匹配奇数元素*/
+.box:nth-child(odd).right {
+    background-color: rgb(255, 255, 255, 0.50);
+    box-shadow: 0,0,10px,rgb(0, 0, 0, 0.31);
+}
+/*中间的年份处理*/
+.center {
+    width:15%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/*>是子元素选择器*/
+    .center > span {
+        width:120px;
+        border-radius:10px;
+        background-color:royalblue;
+        text-align:center;
+        font:900 24px '';
+        line-height:50px;
+    }
+/*时间轴结论*/
+.timelinetalk {
+color:red;
+margin:5px 8px 5px 8px;
+}
+
+/*交互实验*/
+ul {
+    list-style:none;
+}
+.nav {
+    width:100%;
+    height:50px;
+}
+.nav_bx{
+    width:auto;
+    height:50px;
+    background:#66ccff;
+    margin:auto;
+    line-height:50px;
+    text-align:center;
+}
+    .nav_bx li {
+        width:auto;
+        height:50px;
+        float:left;
+        /*加一条细线*/
+        border-right:1px solid #ff6a00;
+        box-sizing:border-box;
+    }
+
+        .nav_bx li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+        }
+        .nav_bx li:hover {
+            background:red;
+        }
+        .nav_bx ul li:last-child{
+            border-right:0;
+        }
+/*二级目录*/
+ .nav_bx > ul > li {
+        float:left;
+        width:14%;
+        height:50px;
+        line-height:50px;
+    }
+ .nav_bx>ul>li>ul{
+     background:#66ccff;
+     display:none;/*鼠标悬浮*/
+ }
+ .nav_bx>ul>li:hover ul{
+     display:block;
+ }
+    .nav_bx > ul > li > ul > li {
+        width:215px;
+        height:40px;
+        line-height:40px;
+    }
+    /*二级的文字*/
+    .nav_bx>ul>li>ul>li:hover{
+        background:black;
+    }
+        .nav_bx > ul > li > ul > li:hover a {color:red;
+        }
+        .nav_bx > ul > li > ul > li > a {
+            color:#66ccff;
+            font-size:15px;
+            display:block;
+        }
+
+/*图片和文字并排*/
+.dog2 {
+    margin-top:200px;
+    width:100%;
+}
+.dog2p{
+    float:left;
+    width:50%;
+}
+.dog2t {
+    float: right;
+    width: 50%;
+    color:red;
+    font-size:22px;
+    margin-top:250px;
+}
+/*本土猫种*/
+.catkinds{
+    margin-top:750px;
+}
+/*国内宠物数量*/
+.catkinds2{
+    margin-top:300px;
+}
+.circl{
+    margin-top:700px;
+}
+.catkinds3{
+    font-size:25px;
+    margin-top:1550px;
+}
+/*猫的习性*/
+.habbit{
+    margin:auto;
+}
+/*结语*/
+.end{
+    margin-top:500px;
+    color:red;
+    font-size:20px;
+}
+
+/*数据来源*/
+.data{
+    margin-top:100px;
+}
+
+/*取消链接跳转*/
+.body {
+    pointer-events: none;
+}
+/*背景*/
+body {
+    margin: 0px;
+    background: url(img/cat.mov) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
