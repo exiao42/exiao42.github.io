@@ -157,18 +157,18 @@ ul {
  .nav_bx>ul>li:hover ul{
      display:block;
  }
-    .nav_bx > ul > li > ul > li {
+.nav_bx > ul > li > ul > li {
         width:215px;
         height:40px;
         line-height:40px;
     }
     /*二级的文字*/
-    .nav_bx>ul>li>ul>li:hover{
+.nav_bx>ul>li>ul>li:hover{
         background:black;
     }
-        .nav_bx > ul > li > ul > li:hover a {color:red;
+.nav_bx > ul > li > ul > li:hover a {color:red;
         }
-        .nav_bx > ul > li > ul > li > a {
+.nav_bx > ul > li > ul > li > a {
             color:#66ccff;
             font-size:15px;
             display:block;
