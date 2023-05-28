@@ -169,7 +169,7 @@ ul {
 .nav_bx > ul > li > ul > li:hover a {color:red;
         }
 .nav_bx > ul > li > ul > li > a {
-            color:#66ccff;
+            color:black;
             font-size:15px;
             display:block;
         }
@@ -223,7 +223,7 @@ ul {
 
 /*取消链接跳转*/
 /*背景*/
-.backg {
+.body {   
     position: fixed;
     top: 0;
     left: 0;
@@ -240,3 +240,4 @@ ul {
     -o-background-size: cover;
     background-position: center 0;
 }
+.body{background-image: url("img/cat22.jpg");}
