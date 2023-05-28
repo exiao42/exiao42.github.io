@@ -118,7 +118,7 @@ ul {
 .nav_bx{
     width:auto;
     height:50px;
-    background:#66ccff;
+    background:black;
     margin:auto;
     line-height:50px;
     text-align:center;
@@ -151,7 +151,7 @@ ul {
         line-height:50px;
     }
  .nav_bx>ul>li>ul{
-     background:#66ccff;
+     background:black;
      display:none;/*鼠标悬浮*/
  }
  .nav_bx>ul>li:hover ul{
