@@ -151,7 +151,7 @@ ul {
         line-height:50px;
     }
  .nav_bx>ul>li>ul{
-     background:black;
+     background:#66ccff;
      display:none;/*鼠标悬浮*/
  }
  .nav_bx>ul>li:hover ul{
@@ -233,7 +233,7 @@ ul {
     z-index: -10;
     zoom: 1;
     background-color: #fff;
-    background-image: url(img/cat22.jpg);
+    background-image: url(img/cat33.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
